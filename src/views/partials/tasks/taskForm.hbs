@@ -1,0 +1,22 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+  <h3>Añade un producto</h3>
+<form action="/task/add" method="POST">
+  <div>
+    <label for="nombre">Escribe el Nombre del producto</label>
+    <input type="string" name="nombre" placeholder="Nombre" id="tittle" class="form-control rounded-0 bg-dark text-white"/>
+  </div>
+  <label for="talla">Escribe talla</label>
+  <input type="string" name="talla" placeholder="Talla" id="talla" class="form-control rounded-0 bg-dark text-white"/>
+  <div>
+    <label for="marca">Escribe marca</label>
+    <input type="string" name="marca" placeholder="Marca" id="marca" class="form-control rounded-0 bg-dark text-white"/>
+  </div>
+  <div>
+    <label for="stock">Escribe stock</label>
+    <input type="number" name="stock" placeholder="Stock" id="stock" class="form-control rounded-0 bg-dark text-white"/>
+  </div>
+
+  <button class="btn btn-primary btn-sm mt-2">Agregar</button>
+</form>
+
+</div>

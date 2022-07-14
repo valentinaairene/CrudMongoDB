@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card card-body bg-dark p-4 text-white rounded-0" >
+    <h1>Actualiza datos de un producto</h1>
+    <form action="/edit/{{task._id}}" method="POST">
+    <div class="mb-3">
+    <input type="text" name="nombre" placeholder="Nombre" value="{{task.nombre}}" class="form-control rounded-0 bg-dark text-white">
+    </div>
+    <div class="mb-3">
+    <input type="text" name="talla" placeholder="Talla" value="{{task.talla}}" class="form-control rounded-0 bg-dark text-white">
+    </div>
+    <div class="mb-3">
+    <input type="text" name="marca" placeholder="Marca" value="{{task.marca}}" class="form-control rounded-0 bg-dark text-white">
+    </div>
+    <div class="mb-3">
+    <input type="text" name="stock" placeholder="Stock" value="{{task.stock}}" class="form-control rounded-0 bg-dark text-white">
+   </div>
+    <button class="btn btn-primary ">Update</button>
+</form>
+</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+

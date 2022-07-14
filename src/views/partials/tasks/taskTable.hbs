@@ -1,0 +1,41 @@
+{{#if tasks}}
+
+<table class="table table-bordered table-hover table-dark">
+    <thead>
+        <tr>
+            <th>N.</th>
+            <th>Nombre</th>
+            <th>Talla</th>
+            <th>Marca</th>
+            <th>Stock</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#each tasks}}
+        <tr>
+            <td>{{@index}}</td>
+            <td>{{nombre}}</td>
+            <td>{{talla}}</td>
+            <td>{{marca}}</td>
+            <td>{{stock}}</td>
+            <td>
+                <a href="/delete/{{_id}}" class="btn btn-danger">delete</a>
+                <a href="/edit/{{_id}}" class="btn btn-info">update</a>
+            </td>
+
+        </tr>
+
+
+  {{/each}}
+
+    </tbody>
+</table>
+
+
+        {{else}}
+
+        <div class="text-center ">
+            <h1>No hay stock en bodega</h1>
+        </div>
+        {{/if}}
